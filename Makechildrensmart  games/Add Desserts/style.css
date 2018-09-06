@@ -1,0 +1,178 @@
+/*-------------------------*/
+/*VARIABLES                */
+/*-------------------------*/
+
+:root {
+    --main-color: #f3535b;
+    --light-color: #e5e6ec;
+    --dark-color: rgb(80, 79, 79);
+    --main-grey: rgb(206, 201, 201);
+}
+
+/*-------------------------*/
+/*RESETS                   */
+/*-------------------------*/
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*-------------------------*/
+/*GLOBALS                  */
+/*-------------------------*/
+
+body {
+    background-color: var(--light-color);
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*-------------------------*/
+/* GAME PAGE INSTRUCTIONS  */
+/*-------------------------*/
+
+.game-page, #closure, .goodwork {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    padding: 6px 0 5px 0;
+}
+
+.game-instructions, #closure {
+    width: 60%;
+    border: 2px solid red;
+	background-color: white;
+    margin-top: 150px;
+    padding-bottom: 20px;
+    border-radius: 8px;
+}
+
+.game-instructions:hover {
+    box-shadow: 0 0 10px 3px var(--dark-color);
+}
+
+#instructions {
+    font-size: 20px;
+}
+
+/*-------------------------*/
+/*   START BUTTON          */
+/*-------------------------*/
+
+#start-game, .togame {
+    width: 15%;
+    height: 70px;
+    margin-top: 150px;
+    border-radius: 20px;
+    border: 2px solid var(--dark-color); /*REMOVES THE THIN BLACK DEFAULT BORDER*/
+    background: var(--main-color);
+    color: var(--dark-color);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: inherit;
+    outline: none;
+    margin-right: 2%;
+}
+
+#start-game:hover, .togame:hover {
+    background-color: var(--main-grey);
+    color: var(--main-color);
+    box-shadow: 0 0 6px 5px var(--dark-color);
+    border: 1px solid var(--main-color);
+}
+
+#start-game:active, .togame:active {
+    outline: none;
+    transform: translateY(6px);
+}
+
+/*-------------------------*/
+/*   GAME CLOSURE          */
+/*-------------------------*/
+
+/* keyframes for closure page image */
+/* @keyframes enlarge {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 22%;
+        height: 22%;
+    }
+}
+
+@-webkit-keyframes enlarge {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 22%;
+        height: 22%;
+    }
+}
+
+@-moz-keyframes enlarge {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to {
+        width: 22%;
+        height: 22%;
+    }
+} */
+
+div.closurepage {
+    visibility: hidden;
+    display: block;
+}
+
+#closure {
+    color: rgb(247, 68, 68);
+    font-size: 40px;
+    font-family: 'Exo 2', sans-serif;
+    margin-top: 20px;
+}
+
+div.win {
+    font-size: 55px;
+    font-weight: bolder;
+    padding: 20px 0;
+}
+
+#closure:hover {
+    box-shadow: 0 0 10px 3px rgb(83, 55, 243);
+}
+
+img.goodwork {
+    border-radius: 50%;
+    margin-left: 37%;
+    width: 22%;
+    height: 22%;
+    padding: 30px 0;
+    /* -webkit-animation-name: enlarge;
+    -webkit-animation-duration: 1s;
+    -moz-animation-name: enlarge;
+    -moz-animation-duration: 1s;
+    animation-name: enlarge;
+    animation-duration: 1s; */
+}
+
+.togame {
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bolder;
+    font-size: 40px;
+    width: 18%;
+    height: 74px;
+    display: block;
+    margin-left: 38%;
+    margin-top: 20px;
+}

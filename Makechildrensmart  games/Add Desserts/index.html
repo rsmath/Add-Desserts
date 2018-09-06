@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="game.css">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <title>Add Desserts</title>
+</head>
+<body>
+    <!-- instructions page -->
+    <div id="game-page" class="game-page">
+        
+        <div class="game-instructions">
+
+            <h1 id="game-title" style="font-size: 55px; color: red; padding-bottom: 5px">Add The Desserts</h1><br>
+            <p id="instructions">
+                Add the two groups of desserts and pick the correct answer. Finish 5 rounds and you win!
+            </p>
+
+        </div>
+
+        <button id="start-game">Start Game!</button>
+    </div>
+
+    <!-- game starts -->
+    <div id="main-game" class="main-game">
+        
+        <!-- showing the round -->
+        <b id="round"></b>
+
+        <div class="desserts">
+            <div id="first-dessert" class="first-dessert">
+                <!-- images inserted by app.js -->
+            </div>
+    
+            <b id="plus">+</b>
+            
+            <div id="second-dessert" class="second-dessert">
+                <!-- images inserted by app.js -->
+            </div>
+        </div>
+    
+        <div class="choices">
+            <button id="choice1" onclick="clicked(1)"></button>    
+            <button id="choice2" onclick="clicked(2)"></button>    
+            <button id="choice3" onclick="clicked(3)"></button>    
+            <button id="choice4" onclick="clicked(4)"></button>    
+        </div>
+    </div>
+
+    <!-- CLOSURE PAGE -->
+    <div class="closurepage" id="closurepage">
+        <header id="closure">
+            Good job! You finished 5 rounds successfully!<br>
+            <div class="win">YOU WON!</div>
+       </header>
+    
+        <img class="goodwork" src="art/goodwork.jpeg" alt="GOOD JOB">
+    
+        <a href="index.html"><button class="togame">PLAY AGAIN</button></a>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
